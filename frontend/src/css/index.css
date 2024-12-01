@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.me-auto{
+    margin-left: 30%;
+}
+.Home{
+ color: red;
+   
+}
+
+/* .insert{
+    background: url("../images/b1.png"), linear-gradient(rgba(39, 3, 73, 0.5),rgba(61, 0, 54, 0.5));
+
+
+}
+#FormIn{
+  width: 50%;   
+  margin: auto;
+  background: linear-gradient(rgb(237, 196, 203), rgb(189, 189, 233));
+  background-size: cover;
+  background-blend-mode: overlay;
+} */
+/*#homeTxt{
+    color: white;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#homeTxt p{
+    font-size: 35px;
+} */
+.InsertPage {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: url("../images/b2.png"), linear-gradient(rgba(39, 3, 73, 0.5),rgba(61, 0, 54, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;  
+  }
+  
+  #insertForm {
+    background: linear-gradient(rgb(89, 80, 220), rgb(189, 189, 233));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 600px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* .formdiv {
+    margin-bottom: 20px;
+  }
+  
+  .formdiv p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+  } 
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+    */
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .disTable {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/b4.png"), linear-gradient(rgba(39, 3, 73, 0.5),rgba(61, 0, 54, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;}
+
+  .SearchPage {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/b4.png"), linear-gradient(rgba(39, 3, 73, 0.5),rgba(61, 0, 54, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.Search{
+    z-index: 100;
+}
+
+.deltbl{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/b4.png"), linear-gradient(rgba(39, 3, 73, 0.5),rgba(61, 0, 54, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.Editform{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/b4.png"), linear-gradient(rgba(39, 3, 73, 0.5),rgba(61, 0, 54, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+  
+}
+#edit{
+    width: 50%;
+    margin: auto;
+    box-shadow: 10px 10px 20px 10px;
+
+}
+#edit #fl{
+    font-size: 20px;
+    font-weight: 600;
+    color: #f6f4f1;
+}
+
+
+  
+table {
+   
+    width: 100%; 
+    border-collapse: collapse; /* Ensures borders collapse into a single line */   
+}
+  
+  table  tr  td  {
+    border: 1px solid rgb(115, 102, 123);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 15px;
+    text-align: center;
+    word-wrap: break-word;    /* Ensures long text wraps properly */
+  }
+  table th {
+    background-color: rgb(239, 172, 233);
+    /* color: white; */
+    border: 1px solid gray;
+    padding: 10px 15px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    #insertForm {
+      padding: 15px;
+    }
+  
+    .formdiv p {
+      font-size: 14px;
+    }
+  
+    input {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+    table {
+      font-size: 14px; /* Adjusts font size for smaller screens */
+    }
+  
+    table tr td {
+      padding: 8px 10px; /* Reduces padding on smaller screens */
+    }
+  
+    /* Makes the table horizontally scrollable on small screens */
+    .formDisplayData {
+      overflow-x: auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    table tr td {
+      padding: 5px 8px; /* Further reduce padding on very small screens */
+      font-size: 12px; /* Further adjust the font size for tiny screens */
+    }
+  
+    /* You can adjust table layout or display options for extremely narrow screens */
+    table {
+      font-size: 12px;
+    }
+  }
