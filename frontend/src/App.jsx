@@ -7,7 +7,6 @@ import Search from "./pages/Search";
 import Edit from "./pages/Editnew";
 import Delete from "./pages/Delete";
 import './css/index.css';
-import Registraion from "./pages/Registration";
 
 
 
@@ -25,7 +24,6 @@ const App=()=>{
                   <Route path="search" element={<Search/>}/>
                   <Route path="delete" element={<Delete/>}/> 
                   <Route path="edit/:id" element={<Edit/>}/> 
-                  <Route path="Registraion" element={<Registraion/>}/>
 
                   </Route>
               </Routes>

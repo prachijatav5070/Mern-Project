@@ -14,7 +14,7 @@ const Display=()=>{
     })
   }
   useEffect(()=>{
-    loadData();
+    loadData()
   },[]);
   
 
@@ -24,8 +24,8 @@ return(
   <>
   <tr>
     <td> {key.where} </td>
-    <td> {key.chekOut} </td>
     <td> {key.checkIn} </td>
+    <td> {key.checkOut} </td>
     <td> {key.room} </td>
     <td> {key.guest} </td>
   </tr>

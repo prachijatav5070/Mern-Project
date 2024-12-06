@@ -10,15 +10,13 @@ const Layout=()=>{
       <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">HOTEL BOOKING SYSTEM</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="insert">Insert</Nav.Link>
             <Nav.Link as={Link} to="display">Display</Nav.Link>
             <Nav.Link as={Link} to="search">Search</Nav.Link>
-            <Nav.Link as={Link} to="delete">Delete/Update</Nav.Link>
-            <Nav.Link as={Link} to="registration">Registration</Nav.Link>
-
+            <Nav.Link as={Link} to="delete">Update</Nav.Link>
         </Nav>
         </Container>
       </Navbar>

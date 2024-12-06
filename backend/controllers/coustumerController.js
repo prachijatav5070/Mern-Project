@@ -24,6 +24,7 @@ const dataSave = async (req, res) => {
 const dataDisplay=async(req,res)=>{
   const myData=await coutModel.find();
   res.send(myData);
+  console.log(myData);
 }
 
 const dataSearch=async(req,res)=>{

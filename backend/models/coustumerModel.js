@@ -1,11 +1,22 @@
 const mongoose = require("mongoose");
 
-const coustSchema = new mongoose.Schema({
+const customerSchema = new mongoose.Schema({
     where: String,
-    checkOut: Date,
-    checkIn: Date,
+    checkOut: {
+        type: Date,
+        required: true,
+        get: (val) => val.toISOString().split('T')[0]  // Custom getter to return only the date part
+    },
+    checkIn: {
+        type: Date,
+        required: true,
+        get: (val) => val.toISOString().split('T')[0]  // Custom getter to return only the date part
+    },
     room: Number,
     guest: Number
 });
 
-module.exports = mongoose.model("Customer",coustSchema);
+// Apply the getter function for dates
+customerSchema.set('toJSON', { getters: true });
+
+module.exports = mongoose.model("Customer", customerSchema);

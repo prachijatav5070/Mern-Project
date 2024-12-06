@@ -22,7 +22,7 @@ const Edit=()=>{
      }
 
      useEffect(()=>{
-        loadData();
+        loadData()
      },[])
 
      const handleInput=(e)=>{

@@ -43,7 +43,7 @@ import {useNavigate} from "react-router-dom";
             <>
             <tr>
               <td> {key.where} </td>
-              <td> {key.chekOut} </td>
+              <td> {key.checkOut} </td>
               <td> {key.checkIn} </td>
               <td> {key.room} </td>
               <td> {key.guest} </td>

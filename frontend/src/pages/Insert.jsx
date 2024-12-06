@@ -11,7 +11,7 @@ const Insert = () => {
     let value = e.target.value;  
     setInput((values) => ({ ...values, [name]: value }));
   };
-
+  // alert(input.)
   const handleSubmit = (e) => {
     e.preventDefault();  // Prevent the default form submission behavior (page refresh)
     console.log(input);   // Log the input values to the console
